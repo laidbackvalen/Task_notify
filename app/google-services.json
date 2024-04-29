@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "513367919831",
+    "project_id": "dmranktask",
+    "storage_bucket": "dmranktask.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513367919831:android:d6b218d648eadee4913492",
+        "android_client_info": {
+          "package_name": "com.example.task_dmrank"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjFlintVgfBKnN5ZlW8oAVwmYeJz3u_Ac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
