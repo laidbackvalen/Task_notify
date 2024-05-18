@@ -79,14 +79,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
         //For Notification
         Drawable drawable = ResourcesCompat.getDrawable(context.getResources(), R.drawable.musicconcert, null);
         BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
-        Bitmap lareIcon = bitmapDrawable.getBitmap();
+        Bitmap largeIcon = bitmapDrawable.getBitmap();
 
         NotificationManager notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
         Notification notification;
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
             if ((age <= 16)) {
                 notification = new Notification.Builder(context)
-                        .setLargeIcon(lareIcon)
+                        .setLargeIcon(largeIcon)
                         .setSmallIcon(R.drawable.ic_launcher_background)
                         .setContentText("You are eligible to get 15% Discount")
                         .setSubText("Congratulation")
@@ -95,10 +95,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
                 notificationManager.notify(NOTIFICATION_ID, notification);
             }
             notificationManager.createNotificationChannel(new NotificationChannel(CHANNEL_ID, "New Channel", NotificationManager.IMPORTANCE_HIGH));
-
         } else {
             notification = new Notification.Builder(context)
-                    .setLargeIcon(lareIcon)
+                    .setLargeIcon(largeIcon)
                     .setSmallIcon(R.drawable.ic_launcher_background)
                     .setContentText("New Message")
                     .setSubText("new message from me")
